@@ -1,0 +1,76 @@
+/* lists.scss */
+
+.listing-container {
+    text-align: center;
+  
+    .listing-header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      font-size: 24px;
+    }
+  
+    .listing-input-container {
+      display: flex;
+      gap: 10px; /* Adjust the spacing between input elements */
+      align-items: center; /* Vertically center items */
+  
+      .listing-input,
+      .listing-select {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      .listing-input {
+        /* Add specific input styles here */
+        font-size: 16px;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+  
+      .listing-select {
+        /* Add specific select styles here */
+        font-size: 16px;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer; /* Add a pointer cursor for better usability */
+      }
+    }
+  
+    .listing-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr; /* Default to 1 column for small screens */
+  
+      @media (min-width: 768px) {
+        /* Medium screens - 2 items in a row */
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @media (min-width: 992px) {
+        /* Large screens - 3 items in a row */
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+  
+        p {
+          margin: 5px 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  

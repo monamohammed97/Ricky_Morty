@@ -1,0 +1,34 @@
+/* itemList.scss */
+
+li {
+    list-style: none;
+    margin-bottom: 20px;
+  
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      p {
+        margin: 5px 0;
+        font-size: 18px;
+      }
+  
+      .alive {
+        color: green;
+      }
+  
+      .dead {
+        color: red;
+      }
+    }
+  }
+  

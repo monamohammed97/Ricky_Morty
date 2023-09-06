@@ -1,0 +1,55 @@
+
+.character-detail {
+    text-align: center;
+  
+    .character-image {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    .character-name {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #333;
+      font-weight: bold;
+    }
+  
+    .character-status,
+    .character-species,
+    .character-type,
+    .character-gender,
+    .character-origin,
+    .character-location,
+    .character-url,
+    .character-created {
+      font-size: 18px;
+      margin: 5px 0;
+      color: #666; /* Change text color to a medium shade */
+    }
+  
+    .episode-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+  
+      .episode-item {
+        a.episode-link {
+          color: #007bff;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
